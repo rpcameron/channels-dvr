@@ -1,0 +1,20 @@
+[Unit]
+Description=Channels DVR
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=channels-dvr
+Group=channels-dvr
+WorkingDirectory=/var/lib/channels-dvr
+StandardOutput=append:/var/lib/channels-dvr/channels-dvr.log
+StandardError=inherit
+ExecStart=/usr/lib/channels-dvr/latest/channels-dvr
+Restart=always
+RestartSec=10
+LimitNOFILE=8192
+OOMScoreAdjust=-500
+
+[Install]
+WantedBy=multi-user.target
