@@ -1,7 +1,7 @@
 # Maintainer: 'Robert Cameron <rob@rpcameron.net>'
 
 pkgname=channels-dvr
-pkgver=2019.09.23.2227
+pkgver=2019.10.29.0031
 pkgrel=1
 pkgdesc="Channels DVR server"
 arch=('x86_64' 'armv7h' 'aarch64')
@@ -17,9 +17,9 @@ source_x86_64=("channels-dvr::https://channels-dvr.s3.amazonaws.com/${pkgver}/ch
                "ffprobe::https://channels-dvr.s3.amazonaws.com/${pkgver}/ffprobe-linux-x86_64")
 source_armv7h=("channels-dvr::https://channels-dvr.s3.amazonaws.com/${pkgver}/channels-dvr-linux-armv7l"
                "comskip::https://channels-dvr.s3.amazonaws.com/${pkgver}/comskip-linux-armv7l"
+               "ffmpeg-dl::https://channels-dvr.s3.amazonaws.com/${pkgver}/ffmpeg-dl-linux-armv7l"
                "ffmpeg::https://channels-dvr.s3.amazonaws.com/${pkgver}/ffmpeg-linux-armv7l"
-               "ffprobe::https://channels-dvr.s3.amazonaws.com/${pkgver}/ffprobe-linux-armv7l"
-               "ffmpeg-dl::https://channels-dvr.s3.amazonaws.com/${pkgver}/ffmpeg-dl-linux-armv7l")
+               "ffprobe::https://channels-dvr.s3.amazonaws.com/${pkgver}/ffprobe-linux-armv7l")
 source_aarch64=("channels-dvr::https://channels-dvr.s3.amazonaws.com/${pkgver}/channels-dvr-linux-arm64"
                 "comskip::https://channels-dvr.s3.amazonaws.com/${pkgver}/comskip-linux-arm64"
                 "ffmpeg::https://channels-dvr.s3.amazonaws.com/${pkgver}/ffmpeg-linux-arm64"
@@ -27,19 +27,19 @@ source_aarch64=("channels-dvr::https://channels-dvr.s3.amazonaws.com/${pkgver}/c
 sha256sums=("ed7d5a050691c1210bec42f22687aa6407e90349e74d9c275a947254e070c6e9"
             "9f4d6dcee4838296da3356e1f7bff10d41ab6bca43a0f266480edae98905ec62"
             "806f873078e4d64a0ed558bfec1078c85ad3f671986bcc4590ed5322041f9858")
-sha256sums_x86_64=("7b1205ced39546e749e426fc6eeea114072c91464e9ae7890db6aaf52e2f47b8"
-                   "febcf895947a9d392163ec49378775a87dd5911b261e2b01e7e4568da592be47"
-                   "85c1d2e7a735000986b4e35b9e64db229649b0d1063e34c91d86c93bcfb98224"
-                   "56884cc03132441cd2e42fd5a6d502fe6bac64cd7b9262338d96626387cb6bf3")
-sha256sums_armv7h=("bf6711b4dde3894e0842093a582e03a7f3667e779b77c8f6cb411c71a7a36bf8"
-                   "dba6f87a7d899fb755c511810346bb1545eb7322fe7eab98b33f861868f54561"
-                   "4aceeb6cbe48a15d7b0343a7484cee220b6045c748d88bc7da22a7336c0efc08"
-                   "b6b445613113adcddc25fdbca00c9f73ac70ca07160ddfbcae5be7a0ce42da7d"
-                   "6089131ef760a592efc44cd862eb5585c685ed80cca387adebd16740d203f0b3")
-sha256sums_aarch64=("211779b0823fea429771e375bdb5cf825c21d41e17d5ae81cffea96b2f8d9aab"
-                    "ff73a8bd8462d63cb7bbf7c5049548e42da4a91e525c145c071c72836268b937"
-                    "463f1b988c51d516bfa0464b2ff31d91e0d6558fb9fff47106887824e73b21da"
-                    "9a5c404317b2d3082ae2a2ed05993b7fa7fc08fc9a3f633e6d9210921f0b58e5")
+sha256sums_x86_64=("2ba7192915630b53badc244a7f7b319268d1eab65221b60533ca9857018d301a"
+                   "24e96adc46bfbe2371eec9e22cb12aa14bac95740934962a872c51e0dafc10c8"
+                   "7f81acac28e3c7dc8cc81314ca51bd0dfeda1babca20d0adb66608ee2455b56e"
+                   "5d15a8d9795852455aed02ed5f6960887a0dd6100e30b10a6c26d82fc0e96b44")
+sha256sums_armv7h=("8bbf0af51282034174e8fb15c3a40943a878145d6dd368c32e410ba7430dc6d3"
+                   "4bd6ca74b4b519c6f10c7108634a9499c6283be7070e13a31f89a8e92acf4c45"
+                   "91281e05d4e443db09427d948e23754b4dc73e3de0cfee8376578dde5f545839"
+                   "255c333f4c4590348b5d8ad6f2ad3abf747d91bc1c32291e22e4bbc241f73a99"
+                   "9dbd4300b5042f6b620efe652be3ff217fe26ae4441afba6f25d7963eb22376d")
+sha256sums_aarch64=("111468bd0bda2a6eb33d54eb533e7a9a183656e88b2783d7f20fd7c5e7ec41c6"
+                    "464a67c7734c2b259d5e914bf47986aa3c94e9127c07a2e87541fa2fa9c3fb2f"
+                    "dc1227cdd178e8cd0c7897e8e8d64c9f70528112286cf88ae6ade0f5aef081e9"
+                    "4bcf6924d1f6bbbc43e1e441d251124257190ac0a9f8c0622982de83ebc475e0")
 
 package() {
     install -Dm750 channels-dvr "${pkgdir}/usr/lib/${pkgname}/${pkgver}/channels-dvr"
