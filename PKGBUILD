@@ -2,7 +2,7 @@
 # Packager: 'Robert Cameron <rob@rpcameron.net>'
 
 pkgname=channels-dvr
-pkgver=2019.11.19.2312
+pkgver=2019.12.05.0128
 pkgrel=1
 pkgdesc="Channels DVR server"
 arch=('x86_64' 'armv7h' 'aarch64')
@@ -28,19 +28,19 @@ source_aarch64=("channels-dvr::https://channels-dvr.s3.amazonaws.com/${pkgver}/c
 sha256sums=("ed7d5a050691c1210bec42f22687aa6407e90349e74d9c275a947254e070c6e9"
             "9f4d6dcee4838296da3356e1f7bff10d41ab6bca43a0f266480edae98905ec62"
             "806f873078e4d64a0ed558bfec1078c85ad3f671986bcc4590ed5322041f9858")
-sha256sums_x86_64=("d8a6666b9d4764f356e64da946cddd7801e6920b9d81bad615a674fcc02c9cce"
-                   "e6662500b8ff7ab4a948977485467985d74dada9dc4f3fac43b9c6b613d547f2"
-                   "aa4bbf47f65693f359c896c3e19f272ffda0438472270749004e943ddbdd9e58"
-                   "c34adee43b945015a11926dee6f4140a00472cb1cdd9f70f3f51263bce3b36d0")
-sha256sums_armv7h=("a8b4c4e33d755fb3db1b87d9d4d669ad40278010087785eeb09ab1f0cdc7a793"
-                   "5aa622e65e762628439c6334de59e0ea6ddb34864d82788a7b1d0013f68473e9"
-                   "00262dff249814c4ebad867b0b4b4cc163aa819d6b4705f28866703af9e02358"
-                   "9d488b0d8083467b1f3bd2978a836febac4405fa0aa1cb7e08afcf02b1b4fb5c"
-                   "754ec723d0d7f863fa1c93993bc210f85eb7c821b3ab1ada7bf736ca114b9ed4")
-sha256sums_aarch64=("e74fcac1daf803ebdabc32acc74619811a0b699ee315c15adea5cdc30dc32dc3"
-                    "2b66e42b8118f56be519b7f3c4f1bdd5afd7ed1be8406c270851146ed29cd057"
-                    "15d3ee3d86d39002ce3a8023f9fad4c5526c0e23665731f66c6e250c0aad437c"
-                    "6dce773195c69b01a5dd8d4773716f015b17db8ac0295bbdac44d43875bda03f")
+sha256sums_x86_64=("997ac2026812c9dfed79648320e292998060702abe92ce0eaf381c39a9a43c9c"
+                   "37ba9c96a443e2591310931487d3d10d3b2089eb3ff73049c27e6d91fb408923"
+                   "e9fcebdb376e2e95925e2c02f71a7cbc49cdd299bac23f8664014f7a5f08de7c"
+                   "32e6d0cc5a0fee178f4e2ab5425eaab8cc84a7f3e685892ce491889346c659f3")
+sha256sums_armv7h=("38f1acb4626fef33fab5f4173f502af5ead6ad33c0480f700e6079f21f72c793"
+                   "5691543d0caf476e0be4c379d7ff5f5c71900fe7eba7cb72582745c91c254272"
+                   "90163074f174f1369a5b5e27fd4932e5a51b518d591f4a6f173970300ae5bec4"
+                   "d94f05c3f1e6aa20edab5c743e07ad2a9ba64c6234a875328662db2eea8b3b9a"
+                   "34f97bf5c04d0b161de27f2950f1d0386c675beb955f021a33e28d29a07b6805")
+sha256sums_aarch64=("e7d489122cbedcd2d0f168e4cefb210bcd7d92f2d157652fb5f303b641c8587e"
+                    "28bada6ca2ddb856dcfa0f8b7e8cffcc720064418b5880817d3d8c12de671090"
+                    "9d402901c31e9a863e2aab21371c910b463dc667669ec838077e8cd104c55262"
+                    "f764b1c52650f8fa98bad0716757ea14a7a11fd3d5a2770cb3a7245a546f906e")
 
 package() {
     install -Dm750 channels-dvr "${pkgdir}/usr/lib/${pkgname}/${pkgver}/channels-dvr"
