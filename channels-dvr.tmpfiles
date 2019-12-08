@@ -1,3 +1,2 @@
 Z /usr/lib/channels-dvr 0750 channels-dvr channels-dvr
 d /var/lib/channels-dvr 0755 channels-dvr channels-dvr
-L /usr/lib/channels-dvr/data - - - - /var/lib/channels-dvr

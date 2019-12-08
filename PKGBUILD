@@ -25,9 +25,9 @@ source_aarch64=("channels-dvr::https://channels-dvr.s3.amazonaws.com/${pkgver}/c
                 "comskip::https://channels-dvr.s3.amazonaws.com/${pkgver}/comskip-linux-arm64"
                 "ffmpeg::https://channels-dvr.s3.amazonaws.com/${pkgver}/ffmpeg-linux-arm64"
                 "ffprobe::https://channels-dvr.s3.amazonaws.com/${pkgver}/ffprobe-linux-arm64")
-sha256sums=("ed7d5a050691c1210bec42f22687aa6407e90349e74d9c275a947254e070c6e9"
+sha256sums=("c72e94e64ed8ae28bb5800c98e563b0d5c8958a390bbaf9e54e1095df0ce9992"
             "9f4d6dcee4838296da3356e1f7bff10d41ab6bca43a0f266480edae98905ec62"
-            "806f873078e4d64a0ed558bfec1078c85ad3f671986bcc4590ed5322041f9858")
+            "c7c314b1b5631b3cf6b90ee84de9a085a018816807e88882bd19fd7d22a8198a")
 sha256sums_x86_64=("997ac2026812c9dfed79648320e292998060702abe92ce0eaf381c39a9a43c9c"
                    "37ba9c96a443e2591310931487d3d10d3b2089eb3ff73049c27e6d91fb408923"
                    "e9fcebdb376e2e95925e2c02f71a7cbc49cdd299bac23f8664014f7a5f08de7c"
